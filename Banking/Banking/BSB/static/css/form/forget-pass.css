@@ -1,0 +1,47 @@
+.forget-pass-page {
+    background-color: azure;
+    padding: 50px;
+    box-shadow: 0px 0px 5px black;
+}
+.forget-inner{
+    margin-top: 5vh;
+}
+
+.forget-pass-page h2 {
+    margin-bottom: 40px;
+}
+
+.forget-pass-page input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+.forget-pass-page input::placeholder {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.forget-pass-page button {
+    margin-top: 30px;
+    padding: 15px;
+    width: 300px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+    background-color: darksalmon;
+}
+
+.forget-pass-page button:hover {
+    background-color: rgb(238, 130, 94);
+    text-decoration: underline;
+}

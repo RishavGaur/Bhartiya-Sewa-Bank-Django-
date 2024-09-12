@@ -1,0 +1,53 @@
+{% extends 'adminBnk/baseAdmin.html' %}
+{% block admin %}
+<div class="container my-profile-page">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="user-profile text-center">
+                <i class="bi bi-person-circle"></i>
+            </div>
+            <div class="row profile-details">
+                <div class="col-md-4">
+                    <label for="name">Name:</label>
+                    <input type="text" value="" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="ac-id">Gender:</label>
+                    <input type="text" value="" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="ac-type">D.O.B:</label>
+                    <input type="text" value="" disabled>
+                </div>
+            </div>
+            <div class="row profile-details">
+                <div class="col-md-4">
+                    <label for="ac-type">Phone Number:</label>
+                    <input type="text" value="" disabled>
+                    <!-- <input type="text" value="123456789" disabled> -->
+                </div>
+                <div class="col-md-4">
+                    <label for="name">E-mail:</label>
+                    <input type="text" value="" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="name">Address:</label>
+                    <textarea name="" id="" cols="25" rows="5" disabled></textarea>
+                </div>
+            </div>
+            <div class="row profile-details">
+                <div class="col-md-4">
+                    <label for="ac-id">Pin Code:</label>
+                    <input type="text" value="" disabled>
+                </div>
+
+            </div>
+            <div class="row profile-details">
+                <div class="col-md-12 text-center">
+                    <button type="button" onclick="window.location='/editProfile/'">Edit Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

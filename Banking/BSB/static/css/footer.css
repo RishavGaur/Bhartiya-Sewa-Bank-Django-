@@ -1,0 +1,155 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+.main-foot {
+    margin-top: 70px;
+    z-index: -1;
+}
+
+.foot-up {
+    top: 20px;
+    height: 10vh;
+    background-color: lightcoral;
+    position: relative;
+}
+
+.foot-down {
+    position: absolute;
+    margin-left: 10vw;
+    margin-top: -40px;
+    background-color: whitesmoke;
+    width: 80vw;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 2px 120px 0px 0px;
+    display: flex;
+    align-items: center;
+    z-index: inherit;
+    box-shadow: 0px 0px 3px black;
+}
+
+.foot-down a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.foot-ico {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: rgb(194, 162, 134);
+}
+
+.move {
+    border-right: 1px solid black;
+    padding: 5px;
+}
+
+.not-bord {
+    border-right: 0px;
+}
+
+.foot-list:hover {
+    color: orange;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:959px) {
+    .foot-up {
+        height: 15vh;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .move {
+        border-right: 0px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .foot-up {
+        height: 20vh;
+    }
+}
+
+@media screen and (max-width:585px) {
+    .foot-up {
+        height: 18vh;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .foot-up {
+        height: 35vh;
+    }
+}
+
+.second-foot {
+    padding: 20px 0px;
+    background-color: antiquewhite;
+}
+
+.third-foot {
+    padding: 20px 0px;
+    background-color: rgb(210, 202, 202);
+}
+
+.foot-head {
+    color: indigo;
+}
+
+.foot-list {
+    text-decoration: none;
+    color: black;
+}
+
+.contain {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.ic-lnk {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.foot-face:hover {
+    color: #1976d2;
+    transition: .5s;
+}
+
+.foot-x:hover {
+    color: #000000;
+    transition: .5s;
+}
+
+.foot-what:hover {
+    color: #27bd03;
+    transition: .5s;
+}
+
+.foot-link:hover {
+    color: #0077b5;
+    transition: .5s;
+}
+
+.foot-you:hover {
+    color: #ff0000;
+    transition: .5s;
+}
+
+.foot-apl:hover {
+    color: #333333;
+    transition: .5s;
+}
+
+.fourth-foot {
+    padding-top: 5px;
+    height: 7vh;
+    background-color: whitesmoke;
+}
+
+.copyright {
+    margin-bottom: -3px;
+}

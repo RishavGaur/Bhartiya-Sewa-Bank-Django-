@@ -1,0 +1,141 @@
+.user-login-form {
+    margin-top: 5vh;
+}
+.user-login-form .main{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    border-radius: 15px;
+}
+
+/* User login Module */
+.user-login-module {
+    background-color: whitesmoke;
+    border-radius: 15px 0px 0px 15px;
+    padding: 80px;
+    font-size: 1.2rem;
+}
+
+.user-login-module .username input,
+.user-login-module .userpassword input {
+    width: 100%;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    margin-top: 35px;
+    padding: 15px;
+    padding-right: 38px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+
+.user-login-module .username {
+    position: relative;
+}
+
+.user-login-module .username label {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    pointer-events: none;
+}
+
+.user-login-module .username i {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    font-size: 1.3rem;
+}
+
+.user-login-module .userpassword {
+    position: relative;
+}
+.user-login-module .userpassword .protect-show,
+.user-login-module .userpassword .protect-hide{
+    cursor: pointer;
+}
+
+.user-login-module .userpassword label {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    pointer-events: none;
+}
+
+.user-login-module .userpassword i {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    font-size: 1.3rem;
+}
+
+.user-login-module .user-remember-forget {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.user-login-module .user-remember-forget .remember-me input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    accent-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.user-login-module .user-remember-forget a {
+    text-decoration: none;
+}
+
+.user-login-module .user-login-btn button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: burlywood;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Welcome or Info. Module */
+
+.user-login-info-module {
+    background-color: moccasin;
+    border-radius: 0px 15px 15px 0px;
+    padding: 80px;
+    font-size: 1.2rem;
+}
+
+.user-login-info-module .heading-one,
+.user-login-info-module .heading-two {
+    color: darkslateblue;
+}
+.user-login-info-module .heading-one{
+    font-size: 2.5rem;
+}
+.user-login-info-module .heading-two{
+    font-size: 2rem;
+}
+
+.user-login-info-module .all-info {
+    margin-top: 50px;
+}
+
+.user-login-info-module .all-info .content-info a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:450px){
+    .user-login-module{
+        margin-bottom: 50px;
+    }
+}

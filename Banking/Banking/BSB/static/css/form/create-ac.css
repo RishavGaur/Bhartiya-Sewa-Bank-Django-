@@ -1,0 +1,376 @@
+body {
+    background-color: #f0f4f9;
+}
+
+/* #basic-info {
+    display: none;
+} */
+
+.remove-basic {
+    transform: translateX(-1280px);
+    transition:0.5s ease-in;
+}
+/* .add-basic {
+    transform: translateX(0px);
+    transition:0.5s ease-in;
+    animation:changePosition .5s ease-in-out;
+} */
+@keyframes backToBasic{
+    from{
+        transform: translateX(-1280px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes backToAddr{
+    from{
+        transform: translateX(-1280px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes backToContact{
+    from{
+        transform: translateX(-1280px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes goToAddr{
+    from{
+        transform: translateX(1380px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes goToContact{
+    from{
+        transform: translateX(1380px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes goToIdentity{
+    from{
+        transform: translateX(1380px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+@keyframes goToPassword{
+    from{
+        transform: translateX(1380px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.remove {
+    transform: translateX(-1280px);
+    transition:0.5s ease-in;
+}
+
+.back {
+    transform: translateX(0px);
+}
+
+
+                                                        /* Create Account Container */
+.google {
+    width: 70vw;
+    margin-top: 5vh;
+    background-color: #ffffff;
+    border: 1px solid gainsboro;
+    box-shadow: 0px 0px 20px whitesmoke;
+    border-radius: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+                                                        /* Same for all Sections */
+
+.google .headings {
+    padding: 30px;
+}
+
+.google .headings h5 {
+    margin-top: 20px;
+    color: dimgrey
+}
+
+.google button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.google .back {
+    margin-right: 10px;
+}
+
+.google .next {
+    margin-left: 10px;
+}
+
+.google .back-btn {
+    background-color: cornflowerblue;
+    margin-left: 17px;
+}
+
+.google .back-btn:hover {
+    background-color: rgb(90, 139, 230);
+    text-decoration: underline;
+}
+
+.google .next-btn {
+    background-color: dodgerblue;
+}
+
+.google .next-btn:hover {
+    text-decoration: underline;
+    background-color: rgb(9, 127, 245);
+}
+
+                                                        /* Personal Info Section */
+.google #personal-info-input {
+    padding: 50px;
+}
+
+.google input,
+.google #gender,
+.google textarea {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+
+.google input:focus {
+    border: 1.5px solid cornflowerblue;
+}
+.google select:focus {
+    border: 1.5px solid cornflowerblue;
+}
+
+#personal-info-input .fname,
+#personal-info-input .lname,
+#personal-info-input .gender,
+#personal-info-input .dob {
+    position: relative;
+}
+
+#personal-info-input label {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.dob input {
+    width: 7vw;
+}
+
+.dob select {
+    width: 9vw;
+    padding: 13px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+
+select .select {
+    display: none;
+}
+
+.date,
+.month,
+.year {
+    display: inline-block;
+}
+
+#personal-info-input .date,
+#personal-info-input .year {
+    position: relative;
+}
+
+.after-input {
+    top: -3px;
+    transition: .5s;
+    font-size: 1rem;
+    font-weight: 450;
+    color: cornflowerblue;
+}
+
+.before-input {
+    top: 20px;
+    transition: .5s;
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+                                                        /* Address Section */
+
+#address-info {
+    display: none;
+}
+
+.backward-address {
+    transform: translateX(-1280px);
+}
+
+.forward-address {
+    transform: translateX(1380px);
+}
+
+.google #address-info-input {
+    padding: 50px;
+}
+
+#address-info-input .r-address,
+#address-info-input .pincode {
+    position: relative;
+}
+
+#address-info-input label {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.google textarea:focus {
+    border: 1.5px solid cornflowerblue;
+}
+
+                                                    /* Contact Info Section */
+
+
+#contact-info {
+    display: none;
+}
+
+.backward-contact {
+    transform: translateX(-1280px);
+}
+
+.forward-contact {
+    transform: translateX(1380px);
+}
+
+.google #contact-info-input {
+    padding: 50px;
+}
+
+#contact-info-input .ph-number,
+#contact-info-input .mail {
+    position: relative;
+}
+
+#contact-info-input label {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+
+                                                            /* Identity Section */
+#identity-info {
+    display: none;
+}
+
+.backward-identity {
+    transform: translateX(-1280px);
+}
+
+.forward-identity {
+    transform: translateX(1380px);
+}
+
+.google #identity-info-input {
+    padding: 50px;
+}
+
+#identity-info-input .aadh-numb,
+#identity-info-input .pan-numb {
+    position: relative;
+}
+
+#identity-info-input label {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+
+                                                    /* Password Section */
+#password-info {
+    display: none;
+}
+
+.backward-password {
+    transform: translateX(-1280px);
+}
+
+.forward-password {
+    transform: translateX(1380px);
+}
+
+.google #password-info-input {
+    padding: 50px;
+}
+
+#password-info-input .password,
+#password-info-input .conf-pass {
+    position: relative;
+}
+
+#password-info-input label {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+.google .submit {
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+
+.google .submit-btn {
+    background-color: seagreen;
+}
+
+.google .submit-btn:hover {
+    text-decoration: underline;
+    background-color: rgb(49, 158, 96);
+}

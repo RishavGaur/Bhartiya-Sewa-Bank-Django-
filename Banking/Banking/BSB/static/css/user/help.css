@@ -1,0 +1,86 @@
+.help-page{
+    width: 100%;
+    height: 80vh;
+    margin-top:10vh;
+    padding:20px;
+    background-color: burlywood;
+}
+.help-page .help-center p{
+    font-size: 1.2rem;
+    color:cadetblue;
+}
+.help-page .feedback-section nav{
+    background-color: beige;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.help-page .feedback-section .chat{
+    height: 50vh;
+    width:100%;
+    background-color: aliceblue;
+    text-align: center;
+    overflow: auto;
+    overflow-x: hidden;
+    padding:30px;
+}
+.help-page .feedback-section .chat .admin-message-display{
+    display: block;
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding:10px;
+    border-radius: 10px;
+    background-color: lightpink;
+}
+.help-page .feedback-section .chat .user-message-display{
+    display: block;
+    float: right;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding:10px;
+    border-radius: 10px;
+    background-color: lightblue;
+    display: none;
+}
+.help-page .feedback-section .chat .chat-settings{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    align-items: center;
+    position:sticky;
+    background-color: aliceblue;
+    bottom:0;
+    margin-top: 70px;
+}
+.help-page .feedback-section .chat .chat-settings textarea{
+    resize: none;
+    width: 80%;
+    outline: none;
+    border-radius: 10px;
+    padding:20px;
+}
+.help-page .feedback-section .chat .chat-settings textarea:focus{
+    box-shadow: 0px 0px 5px darksalmon;
+}
+.help-page .feedback-section .chat .chat-settings textarea::placeholder{
+    font-size: 1.2rem;
+    color:black;
+}
+.help-page .feedback-section .chat .chat-settings button{
+    width: 120px;
+    height:45px;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:white;
+    background-color: darkcyan;
+}
+.help-page .feedback-section .chat .chat-settings button:hover{
+    background-color: rgb(14, 116, 116);
+}

@@ -1,0 +1,18 @@
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        $(document).ready(function(){
+            Swal.fire({
+            title: "Congratulations!",
+            text: "Your Saving Account is Successfully Created...",
+            icon: "success"
+          })
+          .then((will_ok)=>{
+            if(will_ok){
+                window.location="/userLogin/";
+            }
+          })
+        });
+    </script>
+</body>

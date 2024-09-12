@@ -1,0 +1,47 @@
+.edit-profile-page {
+    margin-top: 10vh;
+    padding: 50px 0px;
+    background-color: linen;
+}
+
+.edit-profile-page .user-profile i {
+    font-size: 8rem;
+}
+
+.edit-profile-page .edit-profile-details {
+    margin-top: 30px;
+    padding: 0px 50px;
+}
+
+.edit-profile-page .edit-profile-details input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.edit-profile-page .edit-profile-details textarea {
+    outline: none;
+}
+
+.edit-profile-page .edit-profile-details label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.edit-profile-page .edit-profile-details button {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    background-color: lightseagreen;
+    margin-top: 5px;
+}
+
+.edit-profile-page .edit-profile-details button:hover {
+    transition: .2s;
+    background-color: rgb(8, 129, 123);
+}

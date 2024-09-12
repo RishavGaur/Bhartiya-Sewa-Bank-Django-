@@ -1,0 +1,381 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    margin:0;
+    padding:0;
+}
+
+        /* First Nav */
+
+#first-nav{
+    background-color: moccasin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:5vh;
+}
+#marquee{
+    padding-right: 0vw;
+}
+#top-right{
+    display: flex;
+    column-gap: 30px;
+    margin-right: 20px;
+}
+.theme,.language{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.time{
+    font-size: 1.2rem;
+}
+
+
+        /* Theme Dropdown */
+.theme{
+    position:relative;
+}
+
+        /* Common Dropdown in Theme & Language */
+.same-drop{
+    position:absolute;
+    width:8vw;
+    background-color: aliceblue;
+    text-align: center;
+    padding:10px 0px;
+    z-index: 2;
+    box-shadow: 0px 0px 4px 0.3px black;
+}
+
+
+.theme-opt{
+    padding:10px 0px;
+    margin-left: -4vw;
+    display: none;
+}
+.change{
+    display: block;
+}
+.light-mode,.dark-mode{
+    padding:4px 0px;
+    border-radius: 10px;
+}
+.light-mode:hover,
+.dark-mode:hover{
+    background-color: rgba(107, 102, 102, 0.5);  
+}
+.fit-ico{
+    margin-right: 10px;
+}
+.light-mode{
+    background-color: rgba(107, 102, 102, 0.5);  
+}
+.dark-mode-change{
+    background-color: rgba(107, 102, 102, 0.5);  
+}
+
+
+
+        /* Language Dropdown */
+
+.language{
+    position:relative;
+}
+.language-opt{
+    margin-left: -5vw;
+    display: none;
+}
+.english-mode,.hindi-mode{
+    padding:4px 0px;
+    border-radius: 10px;
+}
+.english-mode:hover,
+.hindi-mode:hover{
+    background-color: rgba(107, 102, 102, 0.5);  
+}
+.english-mode{
+    background-color: rgba(107, 102, 102, 0.5);  
+}
+.hindi-mode-change{
+    background-color: rgba(107, 102, 102, 0.5); 
+}
+
+
+        /* Second Nav */
+
+#second-nav{
+    display: flex;
+    justify-content: space-between;
+    height:10vh;
+    align-items: center;
+    background-color: peachpuff;
+    top:0;
+    position:sticky;
+    z-index: 1;
+}
+#logo{
+    padding-left: 20px;
+}
+.logo-size{
+    object-fit: cover;
+    width:70%;
+}
+#mid-options{
+    display: flex;
+    column-gap: 3vw;
+}
+#last-options{
+    display: flex;
+    column-gap: 3vw;
+    margin-right: 20px;
+}
+.logo,.home,.accounts,.services,.download,.about,#log-in button{
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+#log-in button{
+    font-size: 1.2rem;
+}
+.search{
+    
+    background-color: white;
+    margin-top:0.3vh;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.search:focus{
+    border:1px solid red;
+}
+.login{
+    border: 1px solid cadetblue;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    background-color: #0000cc;
+    color: aliceblue;
+    margin-top: 2px;
+    font-size: 1.2rem;
+}
+.change{
+    text-decoration: none;
+    color:black;
+}
+.change:hover{
+    text-decoration: underline rgb(161, 114, 114);
+    color:rgb(57, 68, 68);
+}
+
+        /* Login Dropdown */
+
+#log-in{
+    position:relative;
+}
+#login-drop{
+    position: absolute;
+    background-color: white;
+    width:300px;
+    margin-top: 2px;
+    right:-17px;
+    border-radius: 3px 3px 5px 5px;
+    padding:10px 5px 10px 10px;
+    box-shadow: 0px 0px 2px 1px black;
+    border-top: 3px solid cadetblue;
+    background-color: rgba(62, 76, 105, 0.8);
+    color:whitesmoke;
+    z-index: 1;
+    display: none;
+}
+
+#login-drop a{
+    text-decoration: none;
+    color:white;
+}
+
+.log-ico{
+    font-size: 1.7rem;
+}
+.log-text{
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-left: 20px;
+}
+/* .pub-arr{
+    margin-left: 75px;
+}
+.emp-arr{
+    margin-left: 15px;
+} */
+
+.login-opt{
+    padding:5px;
+    cursor: pointer;
+    border-bottom: 1px solid burlywood;
+}
+.login-opt:hover{
+    background-color: rgba(107, 102, 102, 0.5);
+    border-radius: 10px;
+}
+.login-sec{
+    border-bottom: 0px;
+}
+
+
+.home{
+    position:relative;
+}
+.accounts{
+    position: relative;
+}
+.ac-fix{
+    margin-left: 18px;
+    display: none;
+}
+.services{
+    position: relative;
+}
+.serv-fix{
+    margin-left: 18px;
+    display: none;
+}
+.bi-caret-up-fill{
+    position:absolute;
+    margin-top: -5px;
+    font-size: 2rem;
+    color:white;
+    z-index: 2;
+}
+
+
+        /* Small Display Nav */
+
+#hidden-nav{
+    display: flex;
+    justify-content: space-between;
+    height:10vh;
+    align-items: center;
+    background-color: peachpuff;
+    top:0;
+    position:sticky;
+    z-index: 1;
+    display: none;
+}
+
+.bi-list,.bi-x-lg{
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.bi-x-lg{
+    display: none;
+}
+
+.bi-caret-down-fill{
+    color:rgb(82, 75, 75);
+}
+
+
+#list{
+    position: relative;
+}
+#list-drop{
+    position:absolute;
+    background-color: beige;
+    height: auto;
+    min-width:30vw;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 14px; */
+    top:9vh;
+    right:2px;
+    /* margin-left: -26vw; */
+    box-shadow: 0px 0px 2px 1px whitesmoke;
+    z-index: 1;
+    padding:10px;
+    border-radius: 0px 0px 5px 20px;
+    border-top: 3px solid cadetblue;
+    border-left: 3px solid cadetblue;
+    display: none;
+}
+#list-drop a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+#list-drop p{
+    margin:10px;
+    padding:10px;
+}
+.ls-bord{
+    border-radius: 20px;
+    border-bottom: 1px solid black;
+}
+.ls-bord:hover{
+    background-color: rgba(107, 102, 102, 0.5);
+}
+.list-ico{
+    font-size: 1.5rem;
+    color: firebrick;
+    margin-right: 10px;
+}
+
+
+
+@media screen and (max-width:945px) {
+    #second-nav{
+        display: none;
+    }
+    #hidden-nav{
+        display: flex;
+    }
+    .bi-list{
+        display: block;
+    }
+    .hidden-logo{
+        display: block;
+    }
+    .same-drop{
+        width:15vw;
+    }
+    .language-opt{
+        margin-left: -5vw;
+    }
+}
+
+@media screen and (max-width:1200px){
+    /* .logo-size{
+        height: 8vh;
+    } */
+    .logo,.home,.accounts,.services,.download,.about,button{
+        font-size: 1.1rem;
+    }
+    .same-drop{
+        width:12vw;
+    }
+    .language-opt{
+        margin-left: -8vw;
+    }
+}
+
+@media screen and (max-width:710px){
+    /* #list-drop{
+        margin-left: -188px;
+    } */
+}
+
+@media screen and (max-width:576px){
+    .bi-caret-down-fill{
+        display: none;
+    }
+    #time{
+        display: none;
+    }
+    .same-drop{
+        width:15vw;
+    }
+    .language-opt{
+        margin-left: -9vw;
+    }
+    /* #list-drop{
+        margin-left: -186px;
+    } */
+}

@@ -1,0 +1,57 @@
+{% extends 'user/baseUser.html' %}
+{% block contents %}
+<div class="container edit-profile-page">
+    <div class="row">
+        <div class="col-md-12">
+            <form action="edit-profile-data.php" method="post">
+                <div class="user-profile text-center">
+                    <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="row edit-profile-details">
+                    <div class="col-md-4">
+                        <label for="name">First Name:</label>
+                        <input type="text" name="fst_name" value="<?php echo $_SESSION['fname']; ?>">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="name">Last Name:</label>
+                        <input type="text" name="lst-name" value="<?php echo $_SESSION['lname']; ?>">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ac-id">Gender:</label>
+                        <input type="text" name="gend" value="<?php echo $_SESSION['gender']; ?>">
+                    </div>
+                </div>
+                <div class="row edit-profile-details">
+                    <div class="col-md-4">
+                        <label for="ac-type">D.O.B:</label>
+                        <input type="date" name="date" value="<?php echo $_SESSION['dob']; ?>">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ac-type">Phone Number:</label>
+                        <input type="text" name="ph_num" value="<?php echo $_SESSION['phone']; ?>">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="name">E-mail:</label>
+                        <input type="text" name="mail" value="<?php echo $_SESSION['email']; ?>">
+                    </div>
+                </div>
+                <div class="row edit-profile-details">
+                    <div class="col-md-4">
+                        <label for="ac-id">Pin Code:</label>
+                        <input type="text" name="pin_code" value="<?php echo $_SESSION['pincode']; ?>">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="name">Address:</label>
+                        <textarea name="addr" id="" cols="25" rows="5"><?php echo $_SESSION['address']; ?></textarea>
+                    </div>
+                </div>
+                <div class="row edit-profile-details">
+                    <div class="col-md-12 text-center">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

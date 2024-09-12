@@ -1,0 +1,33 @@
+{% extends 'user/baseUser.html' %}
+{% block contents %}
+<style>
+    .help {
+        background-color: rgb(169, 169, 169, 0.3);
+    }
+</style>
+<div class="container help-page">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="help-center">
+                <h1 class="text-center">Welcome to Help Portal</h1>
+                <p class="text-center">Your Feedback and satisfaction are our top priorities.</p>
+            </div>
+            <div class="feedback-section">
+                <nav>
+                    Good Morning, How can I help you today?
+                </nav>
+                <div class="chat">
+                    <p class="admin-message-display">Hello
+                        <?php echo $_SESSION['fname']; ?>!
+                    </p><br>
+                    <p class="user-message-display"></p><br>
+                    <div class="chat-settings"><textarea class="user-taken" name="" id="" cols="30" rows="3"
+                            placeholder="Write your feedback!!" autofocus></textarea><button type="button"
+                            onclick="userFeed();">Send</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'user/baseUser.html' %}
+{% block contents %}
+<div class="container notification-page">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 style="text-align:center; margin-bottom:3vh;">Notifications</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Messages</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12/12/2024</td>
+                        <td>This Message is from Code Runner</td>
+                        <td><button type="button">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

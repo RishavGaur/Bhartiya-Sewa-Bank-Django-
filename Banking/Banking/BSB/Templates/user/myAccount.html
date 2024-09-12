@@ -1,0 +1,121 @@
+{% extends 'user/baseUser.html' %}
+{% block contents %}
+<style>
+    .my-account {
+        background-color: rgb(169, 169, 169, 0.3);
+    }
+</style>
+<div class="container my-ac-page">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="user-profile text-center">
+                <i class="bi bi-person-circle"></i>
+            </div>
+            <div class="row ac-details">
+                <div class="col-md-4">
+                    <label for="name">Name:</label>
+                    <input type="text" value="" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="ac-id">Account ID:</label>
+                    <input type="text" value="" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="ac-type">Account Type:</label>
+                    <input type="text" value="" disabled>
+                </div>
+            </div>
+            <div class="row ac-details">
+                <div class="col-md-4">
+                    <label for="name">Account Number:</label>
+                    <input type="text" value="" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="ac-id">IFSC Code:</label>
+                    <input type="text" value="" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="ac-type">Date Opened:</label>
+                    <input type="text" value="" disabled>
+                </div>
+            </div>
+            <div class="row ac-details">
+                <div class="col-md-4">
+                    <label for="name">Account Status:</label>
+                    <input type="text" value="" disabled>
+                </div>
+            </div>
+            <div class="row ac-details">
+                <h3>Card Details:</h3>
+                <div class="col-md-4">
+                    <label for="name">Card Number:</label>
+                    <input type="text" value="" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="ac-id">Expiry Date:</label>
+                    <input type="text" value="" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="ac-type">CVV:</label>
+                    <input type="text" value="" disabled>
+                </div>
+            </div>
+            <div class="row ac-details">
+                <h3>Identity Details:</h3>
+                <div class="col-md-4">
+                    <label for="name">Aadhaar Number:</label>
+                    <input type="text" value="" disabled>
+                </div>
+                <div class="col-md-4">
+                    <label for="ac-id">PAN Number:</label>
+                    <input type="text" value="" disabled>
+                </div>
+            </div>
+            <div class="row ac-details">
+                <div class="col-md-12 text-center">
+                    <button onclick="alert();">Request to Delete Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    function alert() {
+        const swalWithBootstrapButtons = Swal.mixin({
+            customClass: {
+                confirmButton: "btn btn-success",
+                cancelButton: "btn btn-danger"
+            },
+            buttonsStyling: false
+        });
+        swalWithBootstrapButtons.fire({
+            title: "Are you sure?",
+            text: "You won't be able to Access your Account After!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Yes, delete it!",
+            cancelButtonText: "No, cancel!",
+            reverseButtons: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                swalWithBootstrapButtons.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success"
+                });
+            } else if (
+                /* Read more about handling dismissals below */
+                result.dismiss === Swal.DismissReason.cancel
+            ) {
+                swalWithBootstrapButtons.fire({
+                    title: "Cancelled",
+                    text: "Your Saving Account is safe :)",
+                    icon: "error"
+                });
+            }
+        });
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,97 @@
+.terms-conditions-contain {
+    margin-top: 5vh;
+}
+
+/* Welcome Terms Section */
+.welcome-terms {
+    background-color: aliceblue;
+    padding: 10px 20px;
+}
+
+.welcome-terms h1 {
+    margin-bottom: 2vh;
+    color: midnightblue;
+}
+
+.welcome-terms img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    margin-bottom: 4vh;
+    width: 90%
+}
+
+.welcome-terms p {
+    font-weight: 500;
+}
+
+/* Terms guide Section */
+.terms-guide {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.terms-guide h3 {
+    color: royalblue;
+}
+
+.terms-guide img {
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 4vh;
+}
+
+/* Terms Understanding Section */
+.terms-understanding {
+    background-color: aliceblue;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.terms-understanding h3 {
+    color: royalblue;
+}
+
+.terms-understanding img {
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 4vh;
+}
+
+
+/* Terms FAQs Section */
+.terms-faqs {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.terms-faqs h3 {
+    color: royalblue;
+}
+
+.terms-faqs img {
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 4vh;
+}
+
+
+/* Final Agreement Section */
+.final-agreement {
+    background-color: aliceblue;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.final-agreement h3 {
+    color: royalblue;
+}
+
+.final-agreement img {
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 4vh;
+}

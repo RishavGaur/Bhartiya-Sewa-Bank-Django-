@@ -1,0 +1,132 @@
+.breadcrumb a {
+    text-decoration: none;
+}
+
+.customer-corner-contain {
+    margin-top: 5vh;
+}
+
+/* Welcome Section */
+
+.welcome-section {
+    padding: 10px 20px;
+}
+
+.welcome-section h1 {
+    margin-bottom: 2vh;
+    color: midnightblue;
+}
+
+.welcome-section img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    margin-bottom: 4vh;
+    width: 90%
+}
+
+.welcome-section p {
+    font-weight: 500;
+}
+
+/* Basic Info Section */
+.basic-info {
+    background-color: aliceblue;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.basic-info h3 {
+    color: royalblue;
+}
+
+.basic-info .main-content {
+    font-weight: 500;
+}
+
+.basic-info img {
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 4vh;
+}
+
+.basic-info h5 {
+    color: darksalmon;
+}
+
+/* RBI Info Section */
+.rbi-info {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.rbi-info h3 {
+    color: royalblue;
+}
+
+.rbi-info .main-content {
+    font-weight: 500;
+}
+
+.rbi-info img {
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 4vh;
+}
+
+.rbi-info h5 {
+    color: darksalmon;
+}
+
+/* Holidays Info Section */
+.holidays-info {
+    background-color: aliceblue;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.holidays-info h3 {
+    color: royalblue;
+}
+
+.holidays-info .main-content {
+    font-weight: 500;
+}
+
+.holidays-info img {
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0px 0px 3px black;
+    margin-bottom: 4vh;
+}
+
+.holidays-info .number {
+    border-right: 1px solid black;
+    text-align: center;
+    font-weight: 480;
+    color: gray;
+    padding: 0px 5px;
+}
+
+.holidays-info .eve {
+    padding: 2px 10px;
+}
+
+.holidays-info tr:nth-child(even) {
+    background-color: darkseagreen;
+}
+
+/* Customer Priority Section */
+.customer-priority {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.customer-priority h3 {
+    color: royalblue;
+}
+
+.customer-priority .main-content {
+    font-weight: 500;
+}

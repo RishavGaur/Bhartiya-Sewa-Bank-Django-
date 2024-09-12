@@ -1,0 +1,18 @@
+{% extends 'adminBnk/baseAdmin.html' %}
+{% block admin %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <form action="add_data.php" method="post" id="add-form">
+                <h3 style="margin-bottom:5vh;">Add New Student Record</h3>
+                <input type="text" name="add_rollno" placeholder="Roll No.">
+                <input type="text" name="add_name" placeholder="Name">
+                <input type="text" name="add_marks" placeholder="Marks">
+                <input type="text" name="add_grade" placeholder="Grade">
+                <input type="text" name="add_city" placeholder="City">
+                <button type="submit" class="save">Create Account</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

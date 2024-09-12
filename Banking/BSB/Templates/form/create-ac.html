@@ -1,0 +1,222 @@
+{% extends 'base2.html' %}
+{% block content %}
+<div class="container google">
+    <form name="create" action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="row" id="basic-info">
+            <div class="col-md-6 headings">
+                <img src="/static/img/fav-logo2.png" height="80vh" alt="">
+                <h1>Create your Saving Account</h1>
+                <h5>Enter your Name, Gender and Date of Birth</h5>
+            </div>
+            <div class="col-md-6">
+                <div id="personal-info-input">
+                    <div class="row">
+                        <div class="col-md-12 fname">
+                            <input type="text" name="fname" class="take-fname" autofocus>
+                            <label for="fname" class="take-fname-label">First Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 lname">
+                            <input type="text" name="lname" class="take-lname">
+                            <label for="lname" class="take-lname-label">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 gender">
+                            <select name="gend" id="gender" required>
+                                <option class="select" value="">Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 dob text-center">
+                            <div class="date">
+                                <input type="text" name="birdate" maxlength="2" class="take-date">
+                                <label for="date" class="take-date-label">Date</label>
+                            </div>
+                            <div class="month">
+                                <select name="birmonth" id="month">
+                                    <option class="select" value="">Month</option>
+                                    <option value="Jan">January</option>
+                                    <option value="Feb">February</option>
+                                    <option value="Mar">March</option>
+                                    <option value="Apr">April</option>
+                                    <option value="May">May</option>
+                                    <option value="Jun">June</option>
+                                    <option value="Jul">July</option>
+                                    <option value="Aug">August</option>
+                                    <option value="Sep">September</option>
+                                    <option value="Oct">October</option>
+                                    <option value="Nov">November</option>
+                                    <option value="Dec">December</option>
+                                </select>
+                            </div>
+                            <div class="year">
+                                <input type="text" name="biryear" maxlength="4" class="take-year">
+                                <label for="year" class="take-year-label">Year</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="next-btn" onclick="return basicValid();">Next<i
+                                    class="bi bi-arrow-right next"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="address-info">
+            <div class="col-md-6 headings">
+                <img src="/static/img/fav-logo2.png" height="80vh" alt="">
+                <h1>Create your Saving Account</h1>
+                <h5>Enter your Residential-Address</h5>
+            </div>
+            <div class="col-md-6">
+                <div id="address-info-input">
+                    <div class="row">
+                        <div class="col-md-12 r-address">
+                            <textarea name="custaddress" id="address" class="take-addr" autofocus cols="20"
+                                rows="3"></textarea>
+                            <label for="r-address" class="take-addr-label">Residential-Address</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 pincode" style="margin-top: 2vh;">
+                            <input type="text" name="custpincode" class="take-pincode" maxlength="6">
+                            <label for="pincode" class="take-pincode-label">Pin Code</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" onclick="backToName();" class="back-btn"><i
+                                    class="bi bi-arrow-left back"></i>Back</button>
+                        </div>
+                        <div class="col-md-6" style="text-align: right;">
+                            <button type="button" onclick="return addressValid();" class="next-btn">Next<i
+                                    class="bi bi-arrow-right next"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="contact-info">
+            <div class="col-md-6 headings">
+                <img src="/static/img/fav-logo2.png" height="80vh" alt="">
+                <h1>Create your Saving Account</h1>
+                <h5>Enter your Contact Information</h5>
+            </div>
+            <div class="col-md-6">
+                <div id="contact-info-input">
+                    <div class="row">
+                        <div class="col-md-12 ph-number">
+                            <input type="text" name="phone" class="take-ph-number" maxlength="10" autofocus>
+                            <label for="ph-number" class="take-ph-number-label">Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mail">
+                            <input type="text" name="custmail" class="take-mail">
+                            <label for="mail" class="take-mail-label">E-mail</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" onclick="backToAddress();" class="back-btn"><i
+                                    class="bi bi-arrow-left back"></i>Back</button>
+                        </div>
+                        <div class="col-md-6" style="text-align: right;">
+                            <button type="button" onclick="return contactValid();" class="next-btn">Next<i
+                                    class="bi bi-arrow-right next"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="identity-info">
+            <div class="col-md-6 headings">
+                <img src="/static/img/fav-logo2.png" height="80vh" alt="">
+                <h1>Create your Saving Account</h1>
+                <h5>Enter your Identity Details and Upload Your Photo</h5>
+            </div>
+            <div class="col-md-6">
+                <div id="identity-info-input">
+                    <div class="row">
+                        <div class="col-md-12 aadh-numb">
+                            <input type="text" name="aadhaar" class="take-aadh-numb" maxlength="12" autofocus>
+                            <label for="aadh-numb" class="take-aadh-numb-label">Aadhar Number</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 pan-numb">
+                            <input type="text" name="pan" class="take-pan-numb" maxlength="10">
+                            <label for="pan-numb" class="take-pan-numb-label">PAN Number</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 photo">
+                            <input type="file" class="take-photo" name="custphoto">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button type="button" onclick="backToContact();" class="back-btn"><i
+                                    class="bi bi-arrow-left back"></i>Back</button>
+                        </div>
+                        <div class="col-md-6" style="text-align: right;">
+                            <button type="button" onclick="return identityValid();" class="next-btn">Next<i
+                                    class="bi bi-arrow-right next"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="password-info">
+            <div class="col-md-6 headings">
+                <img src="/static/img/fav-logo2.png" height="80vh" alt="">
+                <h1>Create your Saving Account</h1>
+                <h5>Create Password to Protect Your Account</h5>
+            </div>
+            <div class="col-md-6">
+                <div id="password-info-input">
+                    <div class="row">
+                        <div class="col-md-12 password">
+                            <input type="text" class="take-password" autofocus>
+                            <label for="password" class="take-password-label">Create Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 conf-pass">
+                            <input type="password" name="custpassword" class="take-conf-pass" maxlength="20">
+                            <label for="conf-pass" class="take-conf-pass-label">Confirm Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <button type="submit" onclick="return passwordValid();" class="submit-btn">Submit<i
+                                    class="bi bi-box-arrow-up submit"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <input type="hidden" name="date_opened">
+        <input type="hidden" name="account_id">
+        <input type="hidden" name="account_type">
+        <input type="hidden" name="account_type">
+        <input type="hidden" name="account_no">
+        <input type="hidden" name="ifsc_code">
+        <input type="hidden" name="account_status">
+        <input type="hidden" name="card_no">
+        <input type="hidden" name="cvv">
+        <input type="hidden" name="expiry">
+        <input type="hidden" name="balance">
+        <input type="hidden" name="cust_id"> -->
+    </form>
+</div>
+{% endblock %}

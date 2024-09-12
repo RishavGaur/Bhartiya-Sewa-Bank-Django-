@@ -1,0 +1,54 @@
+<div class="navigation">
+    <img src="/static/img/fav-logo2.png" class="nav-logo" alt="" onclick="window.location='/index/'">
+    <div class="hidden">
+        <div class="menu"><i class="bi bi-list"></i></div>
+        <div class="cancel"><i class="bi bi-x-lg"></i></div>
+        <div class="menu-drop">
+            <p><a href="/index/"><i class="bi bi-grid-fill"></i>Home</a></p>
+            <p><a href="/CreateAccount/"><i class="bi bi-cash-coin"></i>Create Account</a></p>
+            <p><a href="/UpdateAccount/"><i class="bi bi-wallet2"></i>Update Account</a></p>
+            <p><a href="/DeleteAccount/"><i class="bi bi-person-vcard"></i>Delete Account</a></p>
+        </div>
+    </div>
+    <section class="two">
+        <div class="home"><a href="/index/">Home</a></div>
+        <div class="create"><a href="/CreateAccount/">Create Account</a></div>
+        <div class="update"><a href="/UpdateAccount/">Update Account</a></div>
+        <div class="delete-ac"><a href="/DeleteAccount/">Delete Account</a></div>
+    </section>
+    <section class="three">
+        <div class="search"><i class="bi bi-search" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"></i></div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <input type="search" placeholder="Search..." autofocus>
+            </div>
+            <div class="offcanvas-body">
+
+            </div>
+        </div>
+        <div class="notify"><a href="/adminNotifications/"><i class="bi bi-bell-fill"></i><i class="bi bi-dot"></i></a>
+        </div>
+        <div class="profile"><i class="bi bi-person-circle"></i>
+            <div class="prof-sec">
+                <p><i class="bi bi-person-fill"></i><a href="/adminProfiles/">My Profile</a></p>
+                <hr>
+                <p><i class="bi bi-box-arrow-right"></i><a href="#">Logout</a></p>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="time">
+    <div class="clock">
+        <script>
+            let dt = new Date();
+            let day = dt.getDate();
+            const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            let month = monthNames[dt.getMonth()];
+            let year = dt.getFullYear();
+            day = day < 10 ? '0' + day : day;
+            let ordinalSuffix = day % 10 === 1 ? "st" : day % 10 === 2 ? "nd" : day % 10 === 3 ? "rd" : "th";
+            document.write(day+""+ordinalSuffix+" "+month+" "+year);
+        </script>
+    </div>
+</div>

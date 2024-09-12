@@ -1,0 +1,203 @@
+.current-ac-page .breadcrumb{
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
+.current-ac-page .breadcrumb a{
+    text-decoration: none;
+}
+
+                    /* Banner for Current Account */
+
+.current-ac-banner {
+    margin-top: 5vh;
+}
+
+.current-ac-banner .account-img1 {
+    object-fit: cover;
+    height: 60vh;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.current-ac-banner .account-head {
+    position: relative;
+}
+
+.account-head .open {
+    position: absolute;
+    top: 45vh;
+    left: 5vw;
+    width: 15vw;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: darksalmon;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-head .head-img {
+    width: 30vw;
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.account-head .banner-content {
+    width: 30vw;
+    position: absolute;
+    top: 25vh;
+    left: 5vw;
+    color: black;
+    font-size: 1.4rem;
+}
+
+.current-ac-page .current-lg-head{
+    color:darkslateblue;
+    margin-bottom: 10px;
+}
+.current-ac-page .current-sm-head{
+    color:cornflowerblue;
+}
+.current-ac-page{
+    margin-top: 5vh;
+}
+
+                /* Current Account Section */
+
+.about-current-ac{
+    margin-top: 7vh;
+}
+
+.current-ac-page .current-ac-features-benefits{
+    margin-top: 5vh;
+}
+.current-ac-page p{
+    font-size: 1rem;
+    color:darkslategrey;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+.about-current-ac .business-coin{
+    height: 50%;
+    width: 30%;
+    float: right;
+    margin:20px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+                /* Current account features */
+
+.current-ac-card-containing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:100%;
+    row-gap: 40px;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+
+.current-ac-card-containing .card {
+    width: 15vw;
+    height: auto;
+    border-radius: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    box-shadow: 0px 0px 1px 0px black;
+    border:none;
+}
+
+.current-ac-card-containing .card .loan{
+    color:maroon;
+}
+.current-ac-card-containing .card .upi{
+    color:cornflowerblue;
+}
+.current-ac-card-containing .card .collection{
+    color:darkslateblue;
+}
+.current-ac-card-containing .card .trade{
+    color:indianred;
+}
+
+.current-ac-card-containing .card p{
+    width:10vw;
+    padding:10px;
+}
+.current-ac-card-containing .card h6{
+    margin-bottom: -5px;
+    font-weight: 650;
+    color:darkgreen
+}
+
+.current-ac-card-containing .card i {
+    font-size: 2rem;
+}
+
+
+                /* Current account Eligibility */    
+
+.current-ac-page .current-ac-eligibility{
+    margin-top: 7vh;
+}
+
+
+                /* Current account Eligibility */    
+
+.current-ac-page .rewards-current-ac{
+    margin-top: 5vh;
+}
+
+                /* Current account Fees & Charges */    
+
+.current-ac-page .current-ac-fees-charges{
+    margin-top: 7vh;
+}
+.current-ac-page .current-ac-fees-charges tr{
+    border-bottom: 1px solid black;
+    padding:15px;
+    font-size: 1.1rem;
+}
+.current-ac-page .current-ac-fees-charges tr:nth-child(even){
+    background-color:lightgray
+}
+.current-ac-page .current-ac-fees-charges table{
+    margin-top: 3vh;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px black;
+    width: 80%;
+}
+.current-ac-page .current-ac-fees-charges .titles{
+    font-size: 1.2rem;
+    font-weight: 630;
+    padding:10px;
+    color:indianred;
+}
+.current-ac-page .current-ac-fees-charges .left-content{
+    padding:20px;
+    font-weight: 500;
+}
+.current-ac-page .current-ac-fees-charges .right-content{
+    color:darkslategrey;
+}
+.current-ac-page .current-ac-fees-charges .last-row{
+    border-bottom: 0px;
+    padding:15px;
+    font-size: 1.1rem;
+}

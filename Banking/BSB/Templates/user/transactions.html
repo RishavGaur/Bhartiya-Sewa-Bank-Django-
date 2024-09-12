@@ -1,0 +1,45 @@
+{% extends 'user/baseUser.html' %}
+{% block contents %}
+<style>
+    .transaction {
+        background-color: rgb(169, 169, 169, 0.3);
+    }
+</style>
+<div class="container transaction-page">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center" style="margin-bottom: 20px;">Transaction History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Account Holder Name</th>
+                        <th>Account Number</th>
+                        <th>Date of Transaction</th>
+                        <th>Transaction Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>
+                            <?php echo $_SESSION['fname'] . " " . $_SESSION['lname']; ?>
+                        </td>
+                        <td>
+                            <?php echo $_SESSION['account_num']; ?>
+                        </td>
+                        <td>
+                            <?php echo $_SESSION['date_opened']; ?>
+                        </td>
+                        <td>
+                            <?php echo $_SESSION['amount']; ?>
+                        </td>
+                        <td>Success</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

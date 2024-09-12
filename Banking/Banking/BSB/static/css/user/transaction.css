@@ -1,0 +1,31 @@
+.transaction-page {
+    margin-top: 10vh;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.transaction-page table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.transaction-page table thead {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.transaction-page table tbody{
+    text-align: center;
+}
+
+.transaction-page table tr {
+    border-bottom: 1px solid black;
+}
+
+.transaction-page table th {
+    padding: 10px;
+}
+
+.transaction-page table td {
+    padding: 5px 10px;
+}

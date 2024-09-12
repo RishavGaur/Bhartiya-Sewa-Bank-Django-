@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container login-contain">
+    <div class="row">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Login</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-md-7 content">
+            <div class="row">
+                <div class="col-md-12 gapping">
+                    <img src="/static/img/Main-Logo.png" class="login-logo" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 gapping">
+                    <h3>Welcome Back</h3>
+                    <h5>Bhartiya Sewa Bank Admin Portal</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 gapping">
+                    <h6>Beware!!!</h6>
+                    <p>Never disclose your OTP/PIN/CVV/Expiry date/Card Number to anybody over phone or any other
+                        media. Only fraudsters are asking such details.<span class="read-more">Read More...</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 form-box text-center">
+            <form action="#">
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-md-12">
+                        <h2>Admin Login</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="parent email-parent">
+                            <input type="email" class="input" id="email-input">
+                            <label for="email-label" class="email-label">Email</label>
+                            <div class="icon"><i class='bx bx-envelope ic'></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="parent pass-parent">
+                            <input type="password" class="input" id="password-input">
+                            <label for="password-label" class="password-label">Password</label>
+                            <div class="icon"><i class='bx bx-lock-alt ic lock'></i></div>
+                            <div class="icon"><i class='bx bxs-hide ic hide' style="display: none;"></i></div>
+                            <div class="icon"><i class='bx bxs-show ic show' style="display: none;"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="remember-forget">
+                            <span><input type="checkbox"><label for="">Remember me</label></span>
+                            <a href="/forgetPass/">Forget Password</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="login-btn">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    let emInp = document.querySelector("#email-input");
+    let emLab = document.querySelector(".email-label");
+    emInp.addEventListener("focus", (e) => {
+        emLab.style.cssText = `
+                margin-top:-25px;
+                transition:.5s;
+                font-weight:500;
+            `;
+    });
+    emInp.addEventListener("blur", (e) => {
+        if (emInp.value == "") {
+            emLab.style.cssText = `
+                top:47px;
+                transition:.5s;
+                
+            `;
+        } else {
+            emLab.style.cssText = `
+                margin-top:-25px;
+                transition:.5s;
+                font-weight:500;
+            `;
+        }
+    });
+    let passInp = document.querySelector("#password-input");
+    let passLab = document.querySelector(".password-label");
+
+    // Password Visibility
+    let lock = document.querySelector(".lock");
+    let show = document.querySelector(".show");
+    let hide = document.querySelector(".hide");
+    let visible = "no";
+    passInp.addEventListener("keyup", (e) => {
+        if (passInp.value == "") {
+            lock.style.display = "block";
+            hide.style.display = "none";
+            show.style.display = "none";
+        } else {
+            lock.style.display = "none";
+            show.style.display = "block";
+        }
+    });
+    show.addEventListener("click", (e) => {
+        if (passInp.type === "password") {
+            passInp.type = "text";
+            show.style.display = "none";
+            hide.style.display = "block";
+        }
+    })
+    hide.addEventListener("click", (e) => {
+        if (passInp.type === "text") {
+            passInp.type = "password";
+            show.style.display = "block";
+            hide.style.display = "none";
+        }
+    })
+
+    passInp.addEventListener("focus", (e) => {
+        passLab.style.cssText = `
+                margin-top:-25px;
+                transition:.5s;
+                font-weight:500;
+            `;
+    });
+    passInp.addEventListener("blur", (e) => {
+        if (passInp.value == "") {
+            passLab.style.cssText = `
+                top:47px;
+                transition:.5s;
+                
+            `;
+        } else {
+            passLab.style.cssText = `
+                margin-top:-25px;
+                transition:.5s;
+                font-weight:500;
+            `;
+        }
+
+    });
+</script>
+{% endblock %}

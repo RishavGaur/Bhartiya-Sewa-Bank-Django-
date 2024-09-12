@@ -1,0 +1,26 @@
+.about-us .breadcrumb a {
+    text-decoration: none;
+}
+
+.about-us {
+    margin-top: 5vh;
+}
+.about-us .about-open-account-btn {
+    width: 25vw;
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: darksalmon;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+.about-us .about-open-account-btn i{
+    margin-left: 5vw;
+    font-size: 1.5rem;
+}
+.about-us video{
+    width:50vw;
+    border-radius: 25px;
+}

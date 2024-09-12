@@ -1,0 +1,310 @@
+#carouselExampleAutoplaying {
+    z-index: -1;
+    margin-top: 20px;
+}
+
+.carousel-control-next i {
+    font-size: 2.5rem;
+    color: black;
+    z-index: 1;
+}
+
+.carousel-control-prev i {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.carousel-indicators {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+
+.carousel-caption h5 {
+    color: cornsilk;
+    font-size: 2rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.carousel-caption p {
+    color: indianred;
+    font-size: 1.3rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.carousel-item img {
+    border-radius: 50px;
+}
+
+/* Home Page */
+
+
+/* Ways to Bank */
+.bankingWays-heading {
+    margin-top: 50px;
+    width: 80vw;
+}
+
+.bankingWays-heading .head {
+    font-size: 2.8rem;
+    color: darkslateblue;
+}
+
+.bankingWays {
+    margin-bottom: 80px;
+    width: 80vw;
+    background-color: antiquewhite;
+    border-radius: 0px 55px 0px 0px;
+}
+
+.bankingWays .ways {
+    font-size: 1.5rem;
+    text-decoration-thickness: 5px;
+    outline: none;
+    padding: 20px;
+}
+
+.bankingWays .one,
+.two,
+.three {
+    border-bottom: 1px solid sandybrown;
+}
+
+.bankingWays .two,
+.five {
+    border-right: 1px solid sandybrown;
+    border-left: 1px solid sandybrown;
+}
+
+.bankingWays .ways-icon {
+    margin-right: 20px;
+    font-size: 2rem;
+}
+
+.ways a {
+    color: black;
+    text-decoration: none;
+}
+
+.ways .bi-globe2 {
+    color: midnightblue;
+}
+
+.ways .bi-tablet {
+    color: cornflowerblue;
+}
+
+.ways .bi-whatsapp {
+    color: #27bd03;
+}
+
+.ways .bi-bag-check {
+    color: gold;
+}
+
+.ways .bi-person-lock {
+    color: salmon;
+}
+
+.ways .bi-houses {
+    color: violet;
+}
+
+/* Offers & Interest */
+
+.container {
+    z-index: -1;
+}
+
+.offers-interests {
+    background-color: rgba(255, 228, 196, 0.3);
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.contain-module {
+    height: 60vh;
+}
+
+.contain-module .first-head,
+.second-head {
+    color: darkslateblue;
+}
+
+.contain-module .second-head {
+    display: inline-block;
+    border-bottom: 4px solid coral;
+    border-radius: 5px;
+}
+
+.contain-module .read-more {
+    color: deepskyblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contain-module .content,
+li {
+    font-weight: 500;
+}
+
+.contain-module .interest-head {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.contain-module .interest-main {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: dodgerblue
+}
+
+.contain-module .interest-last {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.contain-module .offer,
+.interest {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.contain-module .offer {
+    border-radius: 0px 0px 0px 75px;
+}
+
+.contain-module .interest {
+    border-radius: 0px 0px 75px 0px;
+}
+
+.offers-interests .interest-module {
+    margin-top: 80px;
+}
+
+/* Marquee Notice */
+
+.marquee-notice {
+    background-color: darksalmon;
+    color: white;
+    margin: 40px 0px;
+    margin-top: 60px;
+    position: sticky;
+    top: 9.8vh;
+}
+
+/* Savings & Current */
+
+.saving-current {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.saving-current .heading {
+    text-align: left;
+    color: darkslateblue;
+}
+
+.saving .saving-img {
+    object-fit: cover;
+    height: 75%;
+    width: 100%;
+    border-radius: 0px 0px 120px 0px;
+}
+
+.current .current-img {
+    object-fit: cover;
+    height: 80%;
+    width: 100%;
+    border-radius: 0px 0px 0px 120px;
+}
+
+/* What's New & Caution */
+
+.marq-caut .marq-box {
+    height: 45vh;
+    width: 100%;
+    border-radius: 50px;
+    background-color: antiquewhite;
+    padding: 40px;
+}
+
+.marq-caut .caut-box {
+    height: 45vh;
+    width: 100%;
+    border-radius: 50px;
+    background-color: aquamarine;
+    padding: 40px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.marq-box .heading {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid whitesmoke;
+}
+
+.marq-box marquee {
+    height: 30vh;
+}
+
+.data a {
+    color: black;
+    text-decoration: none;
+}
+
+.caut-box .heading {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid whitesmoke;
+    background-color: aquamarine;
+}
+
+.heading .data {
+    font-weight: 700;
+    text-decoration: none;
+    color: black
+}
+
+.caut-box .heading .data .arrow {
+    font-size: 1.2rem;
+}
+
+.caut-box li {
+    padding: 10px 0px;
+    font-size: 1.1rem;
+}
+
+.caut-box .first-li {
+    margin-top: 15px;
+}
+
+.caut-box .last-li {
+    margin-bottom: -50px;
+}
+
+@media screen and (max-width:768px) {
+    .marq-box {
+        margin-bottom: 5vh;
+    }
+
+    .bankingWays {
+        text-align: left;
+    }
+
+    .bankingWays .two {
+        border-right: 0px;
+        border-left: 0px;
+    }
+
+    .bankingWays .one,
+    .two,
+    .three,
+    .four,
+    .five {
+        border: none;
+        border-bottom: 1px solid sandybrown;
+    }
+}

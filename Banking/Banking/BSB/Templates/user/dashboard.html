@@ -1,0 +1,116 @@
+{% extends 'user/baseUser.html' %}
+{% block contents %}
+<style>
+    .dashboard {
+        background-color: rgb(169, 169, 169, 0.3);
+    }
+</style>
+<div class="container-fluid dash-page">
+    <marquee behavior="" direction="" class="user-marquee">Thanks to taking part in our Bank... We will try give our
+        best to you and Enjoy our Services</marquee>
+</div>
+<div class="container dashboard-page">
+    <div class="row">
+        <div class="col-md-8 left">
+            <h2>Hi,
+                !
+            </h2>
+            <h5>Today,
+                <script>
+                    let dt = new Date();
+                    let day = dt.getDate();
+                    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                    let month = monthNames[dt.getMonth()];
+                    let year = dt.getFullYear();
+                    day = day < 10 ? '0' + day : day;
+                    let ordinalSuffix = day % 10 === 1 ? "st" : day % 10 === 2 ? "nd" : day % 10 === 3 ? "rd" : "th";
+                    document.write(day+""+ordinalSuffix+" "+month+" "+year);
+                </script>
+            </h5>
+            <div class="row">
+                <div class="col-md-12 text-center card-contain">
+                    <div class="debit-card-front">
+                        <div class="card-title">
+                            <p>BSB Debit Card</p>
+                        </div>
+                        <div class="card-chip">
+                            <img src="/static/img/user/card-chip.png" alt="">
+                            <img src="/static/img/fav-logo2.png" alt="">
+                        </div>
+                        <div class="card-holder">
+                            <p>
+                                <?php echo $_SESSION['fname']." ".$_SESSION['lname']; ?>
+                            </p>
+                        </div>
+                        <div class="card-type">
+                            <p>VISA</p>
+                        </div>
+                    </div>
+                    <div class="debit-card-back">
+                        <div class="card-swipe">
+                        </div>
+                        <div class="card-num">
+                            <p>
+                                <?php echo $_SESSION['card_num']; ?>
+                            </p>
+                            <p class="cvv"><span class="cvv-title">CVV: </span><span class="cvv-id">&ensp;
+                                    <?php echo $_SESSION['cvv']; ?>
+                                </span>
+                            </p>
+                            <p class="valid"><span class="title">Valid Thru:</span><span class="card-date">
+                                    <?php echo $_SESSION['expiry']; ?>
+                                </span></p>
+                        </div>
+                        <div class="card-type">
+                            <p>VISA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row second-dash" style="margin-top: 40px; padding:0px 20px;">
+                <div class="col-md-12">
+                    <div class="row second-contain text-center">
+                        <div class="col-md-5 my-wallet">
+                            <h3 style="margin-top:15px;">My Wallet</h3>
+                            <p class="total">Total Balance</p>
+                            <p class="balance-dash">Rs
+                                <?php echo $_SESSION['amount']; ?>
+                            </p>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-6 quick-trans text-center">
+                            <h3 style="margin-top:15px;">Quick Transfer</h3>
+                            <form action="#">
+                                <input type="text" placeholder="Account Holder Name">
+                                <input type="text" placeholder="Account Number">
+                                <input type="text" placeholder="IFSC Code">
+                                <input type="text" placeholder="Transaction Amount"><br>
+                                <button type="submit" onclick="transPass();">Pay<i
+                                        class="bi bi-check-circle-fill"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 right text-center">
+            <div class="user">
+                <i class="bi bi-person-circle"></i>
+            </div>
+            <p class="user-name">
+                <?php echo $_SESSION['fname']." ".$_SESSION['lname']; ?>
+            </p>
+            <div class="more-user">
+                <button type="button" class="transaction" onclick="window.location='/transaction/'">Transactions<i
+                        class="bi bi-cash-coin"></i></button type="button">
+                <button type="button" class="more" onclick="window.location='/myAccount/'">More<i
+                        class="bi bi-three-dots-vertical"></i></button>
+            </div>
+            <div class="recent-act">
+                <h4>Recent Activity<i class="bi bi-clock-history"></i></h4>
+                <p>No Records....</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

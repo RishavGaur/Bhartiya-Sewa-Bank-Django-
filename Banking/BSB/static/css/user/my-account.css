@@ -1,0 +1,48 @@
+.my-ac-page {
+    margin-top: 10vh;
+    padding: 50px 0px;
+    background-color: lightpink;
+}
+
+.my-ac-page .user-profile i {
+    font-size: 8rem;
+}
+
+.my-ac-page .ac-details h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.my-ac-page .ac-details {
+    margin-top: 30px;
+    padding: 0px 50px;
+}
+
+.my-ac-page .ac-details input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.my-ac-page .ac-details label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.my-ac-page .ac-details button {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    background-color: crimson;
+    margin-top: 30px;
+}
+
+.my-ac-page .ac-details button:hover {
+    transition: .2s;
+    background-color: rgb(255, 0, 51);
+}

@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container about-us">
+    <div class="row">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About-Us</li>
+            </ol>
+        </nav>
+        <div class="col-md-12 text-center">
+            <h1 style="margin-bottom: 4vh; color: darkslateblue;">Welcome to Bhartiya Sewa Online Banking</h1>
+            <div class="row" style="background-color: azure; padding:20px">
+                <div class="col-md-6" style="text-align: left;">
+                    <p>At Bhartiya Sewa Bank, we've made it super easy for you to manage your money online. <br> With
+                        our
+                        online banking service, you can do lots of cool stuff without ever having to leave your couch!
+                        <br>That's why we've developed our cutting-edge online banking platform to provide you with
+                        seamless
+                        access to your accounts anytime, anywhere.
+                    </p>
+                    <h3 class="text-center" style="margin-top: 6vh;">What you can do:</h3>
+                    <dl>
+                        <dt>Check your balance</dt>
+                        <dd>Wondering how much money you have? Just log in to your account and you can see it right
+                            there.</dd>
+                        <dt>Send money between accounts</dt>
+                        <dd>Need to move money from your checking to your savings? No problem! You can do it online with
+                            a few clicks.</dd>
+                        <dt>Pay your bills</dt>
+                        <dd>Say goodbye to writing checks! You can pay all your bills online, whenever you want. Never
+                            miss a due date again</dd>
+                        <dt>Use our mobile app</dt>
+                        <dd>Take your bank with you wherever you go! Our app works on your phone or tablet, so you can
+                            bank on the move.</dd>
+                        <dt>Stay safe</dt>
+                        <dd>We take your security seriously. Our online banking is super safe with fancy encryption and
+                            extra security steps.</dd>
+                        <dt>Get help when you need it</dt>
+                        <dd>Got a question? Need a hand? Our friendly support team is here for you. Just give us a shout
+                            and we'll help you out.</dd>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <img src="/static/img/about-bank.jpg" width="80%" alt=""
+                        style="border-radius: 100px 50px 20px 20px; box-shadow: 0px 0px 5px black;">
+                    <h3 class="text-center" style="margin-top: 5vh; margin-bottom: 2vh;">How to get started</h3>
+                    <p style="color:darkslategrey">Signing up is easy-peasy! <br> Just go to our website or download our
+                        app, and follow the simple instructions. Before you know it, you'll be managing your money like
+                        a pro!
+                        Ready to make banking easier? Join Bhartiya Sewa Bank Online Banking today!</p>
+                    <button type="button" onclick="window.location='/createAc/'" class="about-open-account-btn">Open
+                        Account<i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="row" id="our-mission">
+                <div class="col-md-12">
+                    <h3 class="text-center" style="margin-top: 6vh;">Our Mission</h3>
+                    <p>At Bhartiya Sewa Bank, our mission is simple: to help our customers achieve their financial
+                        goals. Whether you're saving for a rainy day, buying your dream home, or planning for
+                        retirement, we're here to support you every step of the way.</p>
+                    <video src="/static/img/our-vision.mp4" autoplay muted></video>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center" style="margin-top: 6vh; margin-bottom: 1vh;">Our Values</h3>
+                    <dl style="text-align: left;">
+                        <dt>Integrity</dt>
+                        <dd>We believe in honesty, transparency, and doing what's right for our customers, employees,
+                            and communities.</dd>
+                        <dt>Innovation</dt>
+                        <dd>We're always exploring new ways to improve and innovate, ensuring that we deliver
+                            cutting-edge financial services that meet the evolving needs of our customers.</dd>
+                        <dt>Service Excellence</dt>
+                        <dd>Providing exceptional service is at the heart of everything we do. We're committed to
+                            exceeding our customers' expectations and delivering personalized solutions that make
+                            banking easy and convenient.</dd>
+                        <dt>Community Engagement</dt>
+                        <dd>We're proud to be an active member of the communities we serve. Through charitable
+                            initiatives, volunteerism, and community partnerships, we strive to make a positive impact
+                            and help build a brighter future for all.</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center" style="margin-top: 6vh; margin-bottom: 1vh;">Our History</h3>
+                    <p>Founded 2024, BHARTIYA SEWA BANK has a rich history of serving customers and communities across
+                        BIHAR. From our humble beginnings to our growth and expansion over the years, we remain
+                        steadfast in our commitment to delivering trusted financial services that empower individuals,
+                        businesses, and families to thrive.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center" style="margin-top: 6vh; margin-bottom: 1vh;">Our Team</h3>
+                    <p>Behind every successful bank is a team of dedicated professionals who are passionate about what
+                        they do. At BHARTIYA SEWA BANK, our team is comprised of experienced bankers, financial experts,
+                        and customer service professionals who are committed to your success. Whether you're opening
+                        your first account, applying for a loan, or seeking investment advice, our team is here to help
+                        you achieve your financial goals.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center" style="margin-top: 6vh; margin-bottom: 1vh;">Join Us</h3>
+                    <p>Ready to experience the BHARTIYA SEWA BANK difference? Whether you're a long-time customer or
+                        considering banking with us for the first time, we invite you to join us on this journey toward
+                        financial empowerment. Discover the difference of banking with BHARTIYA SEWA BANK today!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

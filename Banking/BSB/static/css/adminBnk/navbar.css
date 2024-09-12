@@ -1,0 +1,203 @@
+body{
+    background: linear-gradient(to bottom right,white 50%,rgb(222, 181, 168));
+    color:rgb(222, 181, 168)
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    background:linear-gradient(to right,black,orange);
+    align-items: center;
+    font-size: 1.1rem;
+    position:sticky;
+    top:0;
+    z-index: 1;
+}
+
+.navigation .two{
+    display: flex;
+    column-gap: 20px;
+    padding:0px 12px;
+}
+
+.navigation .three{
+    display: flex;
+    column-gap: 20px;
+    padding:0px 12px;
+}
+
+.navigation .nav-logo{
+    object-fit: cover;
+    height: 100%;
+    margin:0px 12px;
+    cursor: pointer;
+}
+
+.navigation .two div{
+    padding:10px;
+}
+.navigation .two div:hover{
+    background-color: rgb(169, 169, 169, 0.3);
+}
+.navigation .two a{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+}
+
+.navigation .three .search,
+.navigation .three .notify,
+.navigation .three .profile{
+    color:darkolivegreen;
+    font-size: 1.3rem;
+    padding:10px;
+    cursor: pointer;
+}
+.navigation .three a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+
+.navigation .three .notify{
+    position: relative;
+}
+.navigation .three .notify a{
+    color:darkolivegreen;
+}
+.navigation .three .notify .bi-dot{
+    position: absolute;
+    color:red;
+    font-size: 2.5rem;
+    top:-12px;
+    right:-10px;
+    display: none;
+}
+
+.navigation .three .profile{
+    position:relative;
+}
+.navigation .three .profile .prof-sec{
+    position: absolute;
+    top:58px;
+    right:-10px;
+    width:130px;
+    background-color: bisque;
+    cursor: default;
+    padding:5px;
+    display: none;
+}
+.navigation .three .profile .prof-sec hr{
+    margin:0;
+    padding:0;
+}
+.navigation .three .profile .prof-sec p{
+    cursor: pointer;
+    margin:5px 0px;
+    text-align: center;
+    font-size: 1.1rem;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding:0px 3px;
+}
+.navigation .three .profile .prof-sec p:hover{
+    background-color: rgb(169, 169, 169, 0.3);
+}
+.navigation .three .profile .prof-sec p i{
+    color:black;
+    font-size: 1.3rem;
+}
+
+.navigation #offcanvasRight{
+    margin-top: 10vh;
+}
+.navigation .offcanvas-header input{
+    width: 100%;
+    padding:6px;
+    outline: none;
+    border:1px solid cadetblue;
+    border-radius: 5px;
+}
+.navigation .offcanvas-header input::placeholder{
+    font-size: 1.3rem;
+    color:black;
+    text-align: center;
+}
+
+/* Hidden Nav */
+
+.navigation .hidden{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    position: relative;
+    display: none;
+}
+
+.navigation .menu,
+.navigation .cancel{
+    font-size: 2.5rem;
+    cursor:pointer;
+    color:white;
+}
+.navigation .cancel{
+    font-size: 2rem;
+    display: none;
+}
+
+.navigation .hidden .menu-drop{
+    position: absolute;
+    top:52px;
+    left:-12px;
+    background-color: bisque;
+    width:240px;
+    z-index: 1;
+    display: none;
+}
+.navigation .hidden .menu-drop p{
+    margin:10px;
+}
+.navigation .hidden .menu-drop p a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:black;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    padding:4px 7px;
+}
+.navigation .hidden .menu-drop p a:hover{
+    background-color: rgb(169, 169, 169, 0.3);
+}
+
+@media screen and (max-width:900px){
+    .navigation .nav-logo,
+    .navigation .two{
+        display: none;
+    }
+    
+    .navigation .hidden{
+        display: flex;
+    }
+}
+.time{
+    position: absolute;
+    right:0;
+    top:10vh;
+    z-index: 1;
+    /* margin-bottom: -6.6vh; */
+    position: sticky;
+    display: inline-block;
+}
+.clock{
+    background-color: rgb(180, 145, 100);
+    padding:10px;
+    border-radius: 0px 0px 10px 0px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:whitesmoke;
+}

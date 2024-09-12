@@ -1,0 +1,38 @@
+{% extends 'user/baseUser.html' %}
+{% block contents %}
+<style>
+    .payment {
+        background-color: rgb(169, 169, 169, 0.3);
+    }
+</style>
+<div class="payment-page">
+    <form action="#" class="payment-form">
+        <h2 class="text-center">Payment</h2>
+        <div class="holder-name">
+            <input type="text" class="ac-name-input" autofocus>
+            <label for="holder-name" class="ac-name-label">Account Holder Name</label>
+        </div>
+        <div class="account-num">
+            <input type="text" class="ac-num-input">
+            <label for="account-num" class="ac-num-label">Account Number</label>
+        </div>
+        <div class="re-account-num">
+            <input type="text" class="ac-re-num-input">
+            <label for="re-account-num" class="ac-re-num-label">Re-Enter Account Number</label>
+        </div>
+        <div class="ifsc-code">
+            <input type="text" class="ifsc-input">
+            <label for="ifsc-code" class="ifsc-label">IFSC Code</label>
+        </div>
+        <div class="amount">
+            <input type="text" class="ac-tran-input">
+            <label for="amount" class="ac-tran-label">Transaction Amount</label>
+        </div>
+        <div class="t-pass">
+            <input type="text" class="tran-pass-input">
+            <label for="t-pass" class="tran-pass-label">Transaction Password</label>
+        </div>
+        <button type="submit" class="transfer-btn">Transfer</button>
+    </form>
+</div>
+{% endblock %}

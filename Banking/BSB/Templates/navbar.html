@@ -1,0 +1,135 @@
+{% include "include/social.html" %}
+<nav id="first-nav">
+    <section id="marquee">
+        <div>
+            <marquee behavior="" direction="" loop="5" onmouseover="this.stop();" onmouseout="this.start();"><span
+                    class="mark-style">भारतीय&ensp; सेवा &ensp;बैंक
+                    &ensp;में
+                    &ensp;आपका &ensp;स्वागत&ensp; है</span></marquee>
+        </div>
+    </section>
+    <section id="time">
+        <div class="time">
+            <script>
+                let d = new Date();
+                let hour = d.getHours();
+                let minute = d.getMinutes();
+                let second = d.getSeconds();
+                let ampm = hour >= 12 ? 'PM' : 'AM';
+                hour = hour % 12;
+                hour = hour ? hour : 12;
+                hour = hour < 10 ? '0' + hour : hour;
+                minute = minute < 10 ? '0' + minute : minute;
+                second = second < 10 ? '0' + second : second;
+                document.write(hour + ":" + minute + ":" + second + " " + ampm)
+            </script>
+        </div>
+    </section>
+    <section id="top-right">
+        <div class="theme"><i class="bi bi-circle-half"></i><i class="bi bi-caret-down-fill"></i>
+            <div class="theme-opt same-drop">
+                <p class="light-mode" style="margin-bottom: 8px;"><i class="bi bi-brightness-high fit-ico"></i>Light
+                </p>
+                <p class="dark-mode"><i class="bi bi-moon-stars-fill fit-ico"></i>Dark</p>
+            </div>
+        </div>
+        <div class="language"><i class="bi bi-translate"></i><i class="bi bi-caret-down-fill"></i>
+            <div class="language-opt same-drop">
+                <p class="english-mode" style="margin-bottom: 8px;"><i class="bi bi-type fit-ico"></i>English</p>
+                <p class="hindi-mode"><i class="bi bi-pencil fit-ico"></i>हिंदी</p>
+            </div>
+        </div>
+    </section>
+</nav>
+<nav id="second-nav">
+    <section id="logo">
+        <a href="/"><img src="/static/img/Main-Logo.png" alt="Logo" class="logo-size"></a>
+    </section>
+    <section id="mid-options">
+        <div><a href="/" class="change home">Home</a>
+        </div>
+        <div><a href="/saving/" class="change accounts">Accounts</a>
+            <i class="bi bi-caret-up-fill ac-fix"></i>
+            {% include "include/dropdown-accounts.html" %}
+        </div>
+        <div><a href="/eservices/" class="change services">e-services</a>
+            <i class="bi bi-caret-up-fill serv-fix"></i>
+            {% include "include/dropdown-services.html" %}
+        </div>
+        <div><a href="/about/" class="change about">About Us</a></div>
+
+    </section>
+    <section id="last-options">
+        <div>
+            <input type="search" placeholder="Search here!!" class="search">
+        </div>
+        <div id="log-in">
+            <button type="button" class="login">Login<i class="bi bi-chevron-down"
+                    style="margin-left: 5px;"></i></button>
+            <div id="login-drop">
+                <p class="login-opt"><i class="bi bi-person-check log-ico pub"></i><a href="/userLogin/"
+                        class="log-text">For Customers</a></p>
+                <p class="login-opt login-sec"><i class="bi bi-person-fill-lock log-ico emp"></i><a
+                        href="/adminLogin/" class="log-text">For Employees (BSB Staff)</a></p>
+            </div>
+        </div>
+    </section>
+</nav>
+<nav id="hidden-nav">
+    <section></section>
+    <section>
+        <a href="/"><img src="/static/img/Main-Logo.png" alt="Logo" class="logo-size"></a>
+    </section>
+    <section>
+        <div id="list">
+            <i class="bi bi-list"></i>
+            <i class="bi bi-x-lg"></i>
+            <div id="list-drop">
+                <p class="ls-bord"><a href="/"><i class="bi bi-house-door-fill list-ico"></i>Home</a></p>
+                <p class="ls-bord"><a href="/saving/"><i
+                            class="bi bi-person-fill-lock list-ico"></i>Accounts</a></p>
+                <p class="ls-bord"><a href="/current/"><i class="bi bi-handbag-fill list-ico"></i>e-services</a>
+                </p>
+                <p class="ls-bord"><a href="/eservices/"><i class="bi bi-info-circle-fill list-ico"></i>About
+                        Us</a></p>
+                <p><input type="search" placeholder="Search here!!" class="search"></p>
+                <p><a href="/userLogin/"><button type="button" class="login">Login<i class="bi bi-chevron-down"
+                                style="margin-left: 5px;"></i></button></a></p>
+            </div>
+        </div>
+    </section>
+</nav>
+
+<!-- <script>
+        function time() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.querySelector(".time").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "static/javascript/time.js");
+            xhttp.send();
+        }
+        setInterval(time, 1000);
+    </script> -->
+<!-- <script>
+        let theme=document.querySelector(".theme");
+    let themeDrop=document.querySelector(".theme-opt");
+    let display="hide";
+    theme.addEventListener("click",(e)=>{
+        if(display=="hide"){
+            display="show";
+            themeDrop.style.display="block";
+            languageDrop.style.display="none";
+        }
+        else{
+            display="hide";
+            themeDrop.style.display="none";
+        } 
+    })
+    </script> -->
+
+<!-- <i class="bi bi-arrow-right log-ico pub-arr"> 
+     <i class="bi bi-arrow-right log-ico emp-arr"></i>    
+-->

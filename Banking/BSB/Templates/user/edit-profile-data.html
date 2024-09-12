@@ -1,0 +1,17 @@
+<?php
+    echo $fname=$_POST['fst_name'];
+    echo $lname=$_POST['lst-name'];
+    echo $gender=$_POST['gend'];
+    echo $dob=$_POST['date'];
+    echo $phone=$_POST['ph_num'];
+    echo $email=$_POST['mail'];
+    echo $pincode=$_POST['pin_code'];
+    echo $address=$_POST['addr'];
+    
+    $conn=mysqli_connect("localhost","root","","bank") or die("Connection Failed");
+    $query="UPDATE users SET first_name='{$fname}', last_name='{$lname}', gender='{$gender}', 
+    dob='{$dob}', address='{$address}', pincode={$pincode}, phone={$phone}, email='{$email}' 
+    WHERE email='{$email}' AND phone='{$phone}'";
+    $result=mysqli_query($conn,$query) or die("Query Failed");
+    header("Location: http://localhost/php/Banking/user/myProfile.php");
+?>

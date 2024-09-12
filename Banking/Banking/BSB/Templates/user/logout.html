@@ -1,0 +1,7 @@
+<?php
+    $conn=mysqli_connect("localhost","root","","bank");
+    session_start();
+    session_unset();
+    session_destroy();
+    header("Location: http://localhost/php/Banking/home.php");
+?>

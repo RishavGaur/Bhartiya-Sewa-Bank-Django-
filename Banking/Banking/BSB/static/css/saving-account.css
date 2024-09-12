@@ -1,0 +1,204 @@
+.saving-ac-page .breadcrumb{
+    margin-left: 2vw;
+}
+.saving-ac-page .breadcrumb a{
+    text-decoration: none;
+}
+.saving-ac-page{
+    margin-top: 5vh;
+}
+
+                    /* Top Image for Saving Account */
+
+.accounts-page-saving {
+    margin-top: 5vh;
+}
+
+.accounts-page-saving .account-img1 {
+    object-fit: cover;
+    height: 60vh;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.accounts-page-saving .account-head {
+    position: relative;
+}
+
+.account-head .open {
+    position: absolute;
+    top: 45vh;
+    left: 5vw;
+    width: 25vw;
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: darksalmon;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-head .head-img {
+    width: 30vw;
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.account-head .open i {
+    margin-left: 5vw;
+    font-size: 1.5rem;
+}
+
+.saving-ac-page .saving-lg-head{
+    color:darkslateblue;
+    margin-bottom: 10px;
+}
+.saving-ac-page .saving-sm-head{
+    color:cornflowerblue;
+}
+
+                /* Saving Account Section */
+
+.accounts-page-saving{
+    margin-top: 5vh;
+}
+
+.saving-ac-page .features-benefits{
+    margin-top: 5vh;
+}
+.saving-ac-page p{
+    font-size: 1.1rem;
+    color:darkslategrey;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+.accounts-page-saving .saving-jar-coin{
+    height: 50%;
+    width: 30%;
+    float: right;
+    margin:20px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+                /* Saving account features */
+
+.card-containing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+    row-gap: 40px;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+
+.card-containing .card {
+    width: 25vw;
+    height: auto;
+    border-radius: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px moccasin;
+    border:none;
+}
+
+.card-containing .card .bi-gift-fill{
+    color:maroon;
+}
+.card-containing .card .debit-card{
+    color:cornflowerblue;
+}
+.card-containing .card .atm-machine{
+    color:darkslateblue;
+}
+.card-containing .card .clock{
+    color:indianred;
+}
+.card-containing .card .bank-service{
+    color:dimgrey;
+}
+.card-containing .card .interest{
+    color:crimson;
+}
+
+.card-containing .card p{
+    width:20vw;
+    padding:10px;
+}
+.card-containing .card h6{
+    margin-bottom: -5px;
+    font-weight: 650;
+    color:darkgreen
+}
+
+.card-containing .card i {
+    font-size: 2rem;
+}
+
+
+                /* Saving account Eligibility */    
+
+.saving-ac-page .eligibility{
+    margin-top: 7vh;
+}
+
+
+                /* Saving account Eligibility */    
+
+.saving-ac-page .rewards{
+    margin-top: 5vh;
+}
+
+                /* Saving account Fees & Charges */    
+
+.saving-ac-page .fees-charges{
+    margin-top: 5vh;
+}
+.saving-ac-page .fees-charges tr{
+    border-bottom: 1px solid black;
+    padding:15px;
+    font-size: 1.1rem;
+}
+.saving-ac-page .fees-charges tr:nth-child(even){
+    background-color:antiquewhite
+}
+.saving-ac-page .fees-charges table{
+    margin-top: 3vh;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px black;
+    width: 80%;
+}
+.saving-ac-page .fees-charges .titles{
+    font-size: 1.2rem;
+    font-weight: 630;
+    padding:10px;
+    color:indianred;
+}
+.saving-ac-page .fees-charges .left-content{
+    padding:20px;
+    font-weight: 500;
+}
+.saving-ac-page .fees-charges .right-content{
+    color:darkslategrey;
+}
+.saving-ac-page .fees-charges .last-row{
+    border-bottom: 0px;
+    padding:15px;
+    font-size: 1.1rem;
+}

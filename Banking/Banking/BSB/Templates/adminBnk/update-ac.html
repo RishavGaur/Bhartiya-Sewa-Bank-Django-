@@ -1,0 +1,22 @@
+{% extends 'adminBnk/baseAdmin.html' %}
+{% block admin %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center all-form">
+            <form action="" class="search-form" method="post">
+                <h3 style="margin-bottom:5vh;">Edit Student Record</h3>
+                <input type="text" name="roll" placeholder="Roll No." style="margin-bottom:5vh">
+                <button type="submit" name="show_btn" class="details">Show Details</button>
+            </form>
+            <form action="update_data.php" method="post" id="add-form" class="detail-form">
+                <input type="hidden" name="rollnoo" value="">
+                <input type="text" name="name_up" value="" placeholder="Name">
+                <input type="text" name="marks_up" value="" placeholder="Marks">
+                <input type="text" name="grade_up" value="" placeholder="Grade">
+                <input type="text" name="city_up" value="" placeholder="City">
+                <button type="submit" onclick="window.location=''" name="update_btn" class="update-btn">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

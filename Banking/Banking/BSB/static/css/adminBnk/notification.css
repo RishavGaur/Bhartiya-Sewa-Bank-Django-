@@ -1,0 +1,31 @@
+.notification-page {
+    margin-top: 10vh;
+}
+
+.notification-page table {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.notification-page table thead {
+    border-bottom: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.notification-page table td {
+    padding: 5px 20px;
+}
+
+.notification-page table td button {
+    border: none;
+    background-color: crimson;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+}
+
+.notification-page table td button:hover {
+    background-color: rgb(255, 0, 51);
+}
